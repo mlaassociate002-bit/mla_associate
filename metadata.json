@@ -1,0 +1,6 @@
+{
+  "name": "MLA Associate - Collection & Repossession Agency",
+  "description": "Professional, ethical, and compliant collection and repossession services across India for banks, NBFCs, and financial institutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

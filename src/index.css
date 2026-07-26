@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+
+  @keyframes marquee2 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+  .animate-marquee2 {
+    animation: marquee2 25s linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse 40s linear infinite;
+  }
+}
+
+/* Light Theme Professional Styling Overrides */
+html.light-theme,
+html.light-theme body,
+.light-theme {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+/* Base dark container transformations in Light Mode */
+.light-theme .bg-\[\#0B192C\],
+.light-theme .bg-\[\#071321\],
+.light-theme .bg-slate-900,
+.light-theme .bg-slate-950 {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+.light-theme .bg-slate-900\/90,
+.light-theme .bg-slate-900\/80,
+.light-theme .bg-slate-900\/70,
+.light-theme .bg-slate-900\/95,
+.light-theme .bg-\[\#0B192C\]\/95,
+.light-theme .bg-\[\#0B192C\]\/90,
+.light-theme .bg-\[\#071321\]\/98 {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  color: #0F172A !important;
+}
+
+.light-theme .bg-slate-800,
+.light-theme .bg-slate-800\/60,
+.light-theme .bg-slate-800\/80,
+.light-theme .bg-slate-800\/50 {
+  background-color: #F1F5F9 !important;
+  color: #1E293B !important;
+}
+
+.light-theme .bg-slate-950\/80,
+.light-theme .bg-slate-950\/60,
+.light-theme .bg-slate-950\/90 {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+/* Navigation & Header in Light Theme */
+.light-theme header nav {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08) !important;
+}
+
+.light-theme header nav .text-white {
+  color: #0F172A !important;
+}
+
+.light-theme header nav .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light-theme header nav .text-slate-300:hover {
+  color: #0F172A !important;
+  background-color: #F1F5F9 !important;
+}
+
+.light-theme header nav .text-slate-400 {
+  color: #64748B !important;
+}
+
+/* Typography High-Contrast Enhancements in Light Mode */
+.light-theme .text-slate-100,
+.light-theme .text-slate-200,
+.light-theme .text-white {
+  color: #0F172A !important;
+}
+
+.light-theme .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light-theme .text-slate-400 {
+  color: #475569 !important;
+}
+
+.light-theme .text-amber-400 {
+  color: #D97706 !important;
+}
+
+.light-theme .text-amber-300 {
+  color: #B45309 !important;
+}
+
+/* Border Overrides in Light Theme */
+.light-theme .border-slate-800,
+.light-theme .border-slate-800\/80,
+.light-theme .border-slate-800\/40,
+.light-theme .border-slate-700,
+.light-theme .border-slate-700\/50,
+.light-theme .border-slate-800\/50 {
+  border-color: #E2E8F0 !important;
+}
+
+.light-theme .border-amber-500\/30,
+.light-theme .border-amber-500\/40,
+.light-theme .border-amber-500\/20,
+.light-theme .border-amber-500\/50 {
+  border-color: rgba(217, 119, 6, 0.35) !important;
+}
+
+/* Shadows in Light Mode */
+.light-theme .shadow-2xl,
+.light-theme .shadow-xl,
+.light-theme .shadow-lg {
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Form Inputs in Light Mode */
+.light-theme input,
+.light-theme textarea,
+.light-theme select {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Modals & Backdrop in Light Theme */
+.light-theme .bg-black\/80,
+.light-theme .bg-black\/70,
+.light-theme .bg-black\/60 {
+  background-color: rgba(15, 23, 42, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
